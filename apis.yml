@@ -1,8 +1,25 @@
 aid: mundi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mundi.png
 name: Mundi
-description: Mundi is a company surfaced as a portfolio company of speedinvest, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Mundi is a digital cross-border trade finance platform for exporters,
+  primarily connecting Mexican exporters with US importers. It provides non-recourse
+  international factoring (invoice advances up to $10M USD / $200M MXN with rates from
+  0.9% per month), foreign-exchange spot and hedging across 100+ currencies, purchase-order
+  and revolving-line financing, multi-currency virtual US accounts and international
+  payments/collections, and digital cargo insurance. Backed by Speedinvest and Union
+  Square Ventures, Mundi operates a customer web application but publishes no public
+  developer API, SDK, or documentation surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/mundi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +30,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Financial Services
+- Trade Finance
+- Fintech
+- Factoring
+- Payments
+- Foreign Exchange
+- Cargo Insurance
+- Cross-Border Trade
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +50,17 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://mundi.io/en/exporters
+  url: https://mundi.io/
+- type: Login
+  url: https://customer.mundi.io/
+- type: TermsOfService
+  url: https://mundi.io/en/legal/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://mundi.io/en/legal/privacy-policy
+- type: DomainSecurity
+  url: security/mundi-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
